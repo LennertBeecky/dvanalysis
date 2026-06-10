@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dvanalysis"
+version = "0.1.0"
+description = "Dynamic Retinal Vessel Analysis — physiology-informed denoising and biomarker extraction"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Lennert Beeckmans"},
+    {name = "Jan Van Eijgen"},
+    {name = "Néstor Ventura-Abreu"},
+    {name = "Ingeborg Stalmans", email = "ingeborg.stalmans@mac.com"},
+    {name = "Maarten De Vos"},
+]
+maintainers = [
+    {name = "Ingeborg Stalmans", email = "ingeborg.stalmans@mac.com"},
+]
+keywords = [
+    "dynamic vessel analysis",
+    "retinal microcirculation",
+    "robust PCA",
+    "denoising",
+    "biomarker extraction",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Healthcare Industry",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+    "plotly>=5.14",
+]
+
+[project.optional-dependencies]
+gui = ["streamlit>=1.28"]
+dev = ["pytest>=7.0", "pytest-cov"]
+
+[project.urls]
+Repository = "https://github.com/LennertBeecky/dvanalysis"
+Issues = "https://github.com/LennertBeecky/dvanalysis/issues"
+
+[tool.setuptools.packages.find]
+include = ["dvanalysis*"]
+
+[tool.pytest.ini_options]
+testpaths = ["dvanalysis/tests"]

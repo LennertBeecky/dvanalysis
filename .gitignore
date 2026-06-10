@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data — do NOT push patient data
+data/
+
+# Generated analysis outputs (may contain per-subject results / PII)
+outputs/
+dvanalysis/examples/results2/
+dvanalysis/examples/results/
+dvanalysis/examples/appendix_output/
+dvanalysis/examples/sensitivity_output/
+dvanalysis/examples/figures/
+
+# Generated figures (regenerate from examples/) — keep the repo code-only
+*.png
+*.pdf
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Conda / venv
+.conda/
+.venv/
+
+# Manuscript sources and other non-code project files
+manuscript/
+*.tex
+*.bib
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.Rhistory
+
+# Internal project notes (not for public repo)
+CLAUDE.md
+REFACTORING.md
+
+# HTCondor / cluster job artefacts
+condor/
+condor_logs/
+
+# Legacy / pre-refactor code
+old_code/
+
+# Real subject inclusion list (template file *.example.json is committed)
+dvanalysis/examples/cycle_quality_subjects.json

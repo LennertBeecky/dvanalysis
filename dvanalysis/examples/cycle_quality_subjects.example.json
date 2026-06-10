@@ -1,0 +1,14 @@
+{
+  "_comment": [
+    "Subject inclusion list for run_cycle_quality.py and fig_cycle_quality.py.",
+    "Maps each segment label (e.g. 'A1', 'V3') to a list of subject IDs",
+    "(strings) that should be retained for the cycle-quality analysis.",
+    "",
+    "Copy this file to 'cycle_quality_subjects.json' (which is gitignored)",
+    "and edit the lists to match your dataset, or pass --subjects-json PATH",
+    "to point to a custom location. If no file is provided, all subjects are",
+    "kept."
+  ],
+  "A1": ["S001", "S002", "S003"],
+  "V3": ["S001", "S002", "S003"]
+}
